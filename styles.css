@@ -50,9 +50,10 @@ body {
 }
 
 main {
-  width: 480px;
+  max-width: 480px;
+  width: calc(100% - 32px);
   border-radius: 24px;
-
+  margin: 0 auto;
   border: 1px solid var(--blue-500);
   overflow-y: hidden;
 }
@@ -170,4 +171,10 @@ footer h1 {
   font-size: 2rem;
   line-height: 48px;
   word-break: break-all;
+}
+
+@media (max-width: 440px) {
+  form {
+    padding-inline: 32px;
+  }
 }
